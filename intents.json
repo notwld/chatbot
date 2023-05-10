@@ -1,0 +1,116 @@
+{
+        "intents": [
+                {
+                        "tag": "greeting",
+                        "patterns": [
+                                "Hi",
+                                "How are you",
+                                "Is anyone there?",
+                                "Hello",
+                                "Good day"
+                        ],
+                        "responses": [
+                                "Hello, thanks for visiting",
+                                "Good to see you again",
+                                "Hi there, how can I help?"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "goodbye",
+                        "patterns": [
+                                "Bye",
+                                "See you later",
+                                "Goodbye"
+                        ],
+                        "responses": [
+                                "See you later, thanks for visiting",
+                                "Have a nice day",
+                                "Bye! Come back again soon."
+                        ]
+                },
+                {
+                        "tag": "thanks",
+                        "patterns": [
+                                "Thanks",
+                                "Thank you",
+                                "That's helpful"
+                        ],
+                        "responses": [
+                                "Happy to help!",
+                                "Any time!",
+                                "My pleasure"
+                        ]
+                },
+                {
+                        "tag": "chatbot",
+                        "patterns": [
+                                "Who built this chatbot?",
+                                "Tell me about Chatbot",
+                                "What is this chatbot name?"
+                        ],
+                        "responses": [
+                                "Hi, I am Chatbot designed by Mayank.",
+                                "Thanks for asking. I am designed by wld.",
+                                "I am a chatbot."
+                        ]
+                },
+                {
+                        "tag": "location",
+                        "patterns": [
+                                "What is your location?",
+                                "Where are you located?",
+                                "What is your address?"
+                        ],
+                        "responses": [
+                                "We are from World's largest Democracy Pakistan.",
+                                "You can visit Pakistan to meet us",
+                                "Thans for your Interest. I live in Pakistan."
+                        ]
+                },
+                {
+                        "tag": "connect",
+                        "patterns": [
+                                "Give me your social media accounts link",
+                                "Where can we connect",
+                                "How can i reach out to you?",
+                                "Is there any way we can connect"
+                        ],
+                        "responses": [
+                                "You can connect me on Linkedin or Github \n Linkedin - https://www.linkedin.com/in/mwfarrukh/ \n Github - https://github.com/notwld",
+                                "You can visit https://muhammadwaleed.me"
+                        ]
+                },
+                {
+                        "tag": "movies",
+                        "patterns": [
+                                "Which is your favourite movie?",
+                                "Suggest me some movies",
+                                "Recommend movies"
+                        ],
+                        "responses": [
+                                "Shutter Island",
+                                "Split",
+                                "Inception",
+                                "Dune",
+                                "Intersteller",
+                                "John Wick",
+                                "Demon Slayer",
+                                "JJK 0"
+                        ]
+                },
+                {
+                        "tag": "about",
+                        "patterns": [
+                                "Who are you?",
+                                "Tell me about Yourself",
+                                "What is this?"
+                        ],
+                        "responses": [
+                                "Hi, I am Waleed. Nice to meet you. I made this chatbot for fun and practice.",
+                                "Thanks for asking. I am wld."
+                        ]
+                }
+               
+        ]
+}

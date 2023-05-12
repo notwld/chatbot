@@ -1,0 +1,80 @@
+.terminal {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+  }
+  
+  .terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .terminal-header-text {
+    font-size: 0.8rem;
+  }
+  
+  .terminal-header-icons {
+    display: flex;
+  }
+  
+  .terminal-header-icon {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0 0.25rem;
+    border-radius: 50%;
+  }
+  
+  .close {
+    background-color: #ff605c;
+  }
+  
+  .maximize {
+    background-color: #ffd52e;
+  }
+  
+  .minimize {
+    background-color: #33c74f;
+  }
+  
+  .terminal-body {
+    flex: 1;
+    padding: 0.5rem;
+    overflow-y: auto;
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+  }
+  .insideform{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .terminal-prompt {
+    margin-right: 0.5rem;
+    color: #fff;
+  }
+  
+  .terminal-input {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+  
+  /* Optional: Add some basic styles for links */
+  .terminal-body a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .terminal-body a:hover {
+    color: #ffd52e;
+  }
+  

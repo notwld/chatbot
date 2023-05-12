@@ -24,13 +24,12 @@ function Terminal() {
           headers: {
             'Content-Type': 'application/json',
           },
-          body:String(command),
+          body: JSON.stringify({ query: command }),
         })
           .then((res) => res.json())
           .then((data) => {
             const output = (
-              <span style={{ color: 'green' }}>{data}
-              </span>
+              <span style={{ color: 'green' }}>{data.response}</span>
             );
             setPrevCommands([...prevCommands, { command, output }]);
           })

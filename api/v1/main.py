@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from predict import get_response
 import uvicorn
+from typing import Any,Dict
 
 app = FastAPI()
 
@@ -19,13 +20,16 @@ app.add_middleware(
 
 
 @app.get("/")
-async def root():
+def root():
     return {"message": "Hello World"}
 
 
 @app.post("/predict")
-async def predict(query: str):
-    return get_response(query)
+def predict(query: Dict[Any, Any]):
+    print(query)
+    return {
+        "response":get_response(str(query['query'])),
+    }
 
 if __name__ == "__main__":
     uvicorn.run(app)
